@@ -42,6 +42,9 @@ app.get('/', (req, res) => { res.send('Hello World!, 안녕하세요, 기모리'
 app.post('/register', (req, res) => {
   
   const user = new User(req.body)
+  
+  
+  //save를 하기전에 암호화처리를 해줘야함
 
   user.save((err, userInfo) => {
     if(err) return res.json({success: false, err}) //실패했을때
