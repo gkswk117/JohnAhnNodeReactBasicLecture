@@ -1,4 +1,4 @@
-//branch [master]
+//branch [master] "소스트리에서 변경되는지 확인."
 //참고: https://www.inflearn.com/
 //따라하며 배우는 노드, 리액트 시리즈 - 기본 강의
 //nodejs 설치 -> express 받기 -> MongoDB 계정만들고 설치 -> mongoose 받기 ->
