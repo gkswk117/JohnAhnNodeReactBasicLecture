@@ -10,7 +10,7 @@ const userSchema = mongoose.Schema({
    },
    email: {
        type: String,
-       trim: true, //trim은 gkswk 117@gmail.com 에서 spacebar 없애주는 역할
+       trim: true, //trim은 예를 들면 gkswk 117@gmail.com 에서 spacebar 없애주는 역할
        unique: 1 //똑같은 이메일은 쓰지 못하게
    },
    password: {
@@ -22,7 +22,7 @@ const userSchema = mongoose.Schema({
         type: String,
         maxlengh: 50
    },
-   role: {//관리자, 일반유저 등등 구분하는 정보
+   role: {//관리자, 일반유저 등등 구분하는 정보. 0이면 일반유저, 1이면 관리자
        type: Number,
        defualt: 0 //임의로 정해주지 않으면 자동으로 0번
    },
@@ -30,9 +30,8 @@ const userSchema = mongoose.Schema({
    image: String,
 
 
-   token: { // 나중에 유효성 같은거를 줄 수도 있음.
+   token: { // 나중에 유효성 같은거를 관리할 수도 있음.
         type: String
-
    },
    tokenExp: { //유효기간
         type: Number
