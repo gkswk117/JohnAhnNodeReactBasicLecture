@@ -1,4 +1,5 @@
-//참고: https://www.inflearn.com/hello
+//branch main
+//참고: https://www.inflearn.com/
 //따라하며 배우는 노드, 리액트 시리즈 - 기본 강의
 //nodejs 설치 -> express 받기 -> MongoDB 계정만들고 설치 -> mongoose 받기 ->
 //git(로컬) 설치 -> github(온라인) 계정만들기 -> git(로컬)과 github(온라인)를 연결시켜주는 ssh key 생성 -> NODE MON 설치
