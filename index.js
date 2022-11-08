@@ -11,7 +11,6 @@
 //git 상태 확인: git status
 //nodemon: package.json에 있음. backend말고 다른 이름 붙여줘도 됨. nodemon덕분에 코드 수정시 서버를 내렸다가 다시 키지 않아도 바로바로 웹페이지에 적용됨.
 
-
 const express = require('express')
 const app = express()
 const port = 3000
@@ -28,7 +27,6 @@ mongoose.connect(config.mongoURI, {
 }).then(() => console.log('MongoDB Connected...'))
 .catch(err => console.log(err))
 
-
 //application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({extended: true}))
 
@@ -39,8 +37,6 @@ app.use(cookieParser())
 
 //Hello World!를 로컬 서버에 보내는 앱. 간단한 연습용 예제.
 app.get('/', (req, res) => { res.send('Hello World!, 안녕하세요.')})
-
-
 
 app.post('/api/users/register', (req, res) => {
   //이 앱은 회원가입할 때 필요한 정보들을 client에서 가져오면
